@@ -2,6 +2,8 @@
 
 A Python implementation of a linear Kalman filter applied to 2D vehicle tracking.
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+
 
 ## Project files
 
@@ -16,12 +18,14 @@ requirements.txt   # Python dependencies
 
 ## Run web app
 
+Click the Streamlit link above to run the app.
+Alternatively, you can run the app locally in your browser.
+
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app opens in your browser at `http://localhost:8501`.
 
 ## Formulas used
 
