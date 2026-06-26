@@ -240,6 +240,7 @@ def fig_tuning(meas_noise_std, seed):
 # App layout 
 
 st.title("2D Kalman Filter — GPS Tracking Demo")
+st.caption("By James Hampson")
 st.caption("Simulate a vehicle path, add GPS noise, and watch the Kalman filter recover the true trajectory.")
 
 # Sidebar
