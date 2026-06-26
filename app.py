@@ -1,5 +1,5 @@
 """
-KalmanFilterApp.py
+app.py
 
 Streamlit web app for 2D Kalman Filter GPS tracking demo.
 """
@@ -62,8 +62,6 @@ def fig_trajectory(results):
     ax.scatter(meas[:, 0], meas[:, 1], s=4, alpha=0.35, color=CORAL, label="GPS measurements", zorder=2)
     ax.plot(true_pos[:, 0], true_pos[:, 1], color=GRAY, lw=1.5, ls="--", label="True path", zorder=3)
     ax.plot(filt[:, 0], filt[:, 1], color=BLUE, lw=2.2, label="Kalman estimate", zorder=4)
-    #ax.plot(*true_pos[0],  "o", ms=9, color=GREEN, zorder=5, label="Start")
-    #ax.plot(*true_pos[-1], "s", ms=9, color=AMBER, zorder=5, label="End")
 
     rmse_gps, rmse_kf = results["rmse_gps"], results["rmse_kf"]
     ax.text(0.02, 0.97,
