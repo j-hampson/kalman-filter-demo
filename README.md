@@ -5,11 +5,13 @@ A Python implementation of a linear Kalman filter applied to 2D vehicle tracking
 
 ## Project files
 
+```
 kalman.py          # Core filter: KalmanFilter2D class
 simulate.py        # Ground-truth trajectory and GPS noise generation
 run_filter.py      # Runs filter and computes RMSE
 app.py             # Streamlit web app
 requirements.txt   # Python dependencies
+```
 
 
 ## Run web app
@@ -19,8 +21,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app opens in your browser at `http://localhost:8501`. Use the sidebar sliders to tune the filter parameters and hit **▶ Run filter** to update all charts.
-
+The app opens in your browser at `http://localhost:8501`.
 
 ## Formulas used
 
